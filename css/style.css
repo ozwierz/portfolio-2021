@@ -1,0 +1,211 @@
+body {
+    font-family: "Montserrat", serif;
+    background-color: rgb(215, 236, 243);
+}
+
+.skip a {
+    background-color: white;
+    left: 0;
+    padding: 7px;
+    position: absolute;
+    top: -50px;
+    color:  rgb(75, 114, 128);
+}
+
+.skip a:focus {
+    position: relative;
+    top: 0px;
+    left:0px;
+}
+
+.skip a:visited {
+    color:rgb(75, 114, 128)
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(75, 114, 128);
+    border-bottom: solid white 4px;
+}
+
+header h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 30px;
+    padding: 10px;
+}
+
+.nav_links {
+    display:flex;
+    flex-direction: row;
+}
+
+li {
+    border: 2px solid white;
+    padding: 10px;
+}
+
+a {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+a:visited{
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.current {
+    text-transform: uppercase; 
+    text-decoration: underline;
+}
+
+.title, .facts {
+    border: 3px solid white;
+    padding: 10px;
+}
+
+.title h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight:bold;
+}
+
+.skouse {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    border: 10px solid white;
+}
+
+footer {
+    background-color:rgb(75, 114, 128);
+    border-top: 4px solid white;
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* philanthropy.html */
+h2 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 900;
+    color:  rgb(75, 114, 128);
+}
+
+.walk a {
+    color:  rgb(75, 114, 128);
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-row-gap: 20px;
+  }
+
+.walk_image, .environment_image, .gerontology_image {
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.walk_image {
+    grid-column: 1 / 2;
+}
+
+.environment_image {
+    grid-column: 2 / 3;
+}
+
+.gerontology_image {
+    grid-column: 1 / 2;
+}
+
+  .walk, .walk_image{
+    grid-row: 1 / span 1;
+  }
+
+  .environment, .environment_image{
+    grid-row: 2 / span 1;
+  }
+
+  .walk, .gerontology {
+    grid-column: 2 / span 1;
+  }
+
+  .environment {
+      grid-column: 1 / span 1;
+  }
+
+  /* .walk, .gerontology, .environment {
+      max-height: 500px;
+  } */
+
+  .gerontology, .gerontology_image {
+    grid-row: 3 / span 1;
+  }
+
+  .text-block{
+    background-color: rgba(255, 255, 255, .8);
+    border: 10px solid  rgb(75, 114, 128);
+    padding: 30px;
+    /* Your code here */
+    align-self: center;
+    max-height: 330px;
+    overflow: scroll;
+  }
+
+  /* whySK.html */
+.container_why {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 40px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.container_why h2 {
+    font-size: 18px;
+    padding: 12px;
+    text-align: center;
+    text-decoration: underline;
+    color: black;
+}
+
+.container_why div {
+    border: 15px solid white;
+}
+
+.container_why p {
+    margin: 15px;
+}
+
+/* photos.html */
+.photos {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    height: 75%;
+}
+
+.photos img {
+    width: 100%;
+    border: solid white 8px;
+}
