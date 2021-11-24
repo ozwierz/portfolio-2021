@@ -67,14 +67,15 @@ a:hover {
 .current {
     text-transform: uppercase; 
     text-decoration: underline;
+    font-weight: bolder;
 }
 
-.title, .facts {
+.title, .facts, .contact_us {
     border: 3px solid white;
     padding: 10px;
 }
 
-.title h1 {
+.title h1, .contact_us h1 {
     padding-top: 20px;
     padding-bottom: 20px;
     text-transform: uppercase;
@@ -99,76 +100,95 @@ footer {
     color: white;
 }
 
+form {
+    border: 2px solid white;
+    padding: 10px;
+}
+  
+legend{ 
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+  
+label{
+    display: inline-block;
+    padding-top: 15px;
+}
+
+input {
+    width: 100%;
+    display: inline-block;
+    border: 3px solid rgb(75, 114, 128);
+    box-sizing: border-box;
+    padding: 10px 20px;
+    margin: 8px 0;
+}
+
+textarea{
+    width: 100%;
+    display: inline-block;
+    border: 3px solid rgb(75, 114, 128);
+    box-sizing: border-box;
+    height: 100px;
+    padding: 10px 20px;
+    margin: 8px 0;
+}
+  
+input[type=submit] {
+    background-color: rgb(75, 114, 128);
+    color: white;
+    padding: 10px 20px;
+    margin: 8px 0;
+    width: 100%;
+    font-size: 18px;
+}
+  
+input[type=submit]:hover {
+    background-color: white;
+    color:rgb(75, 114, 128);
+}
+
+
 /* philanthropy.html */
 h2 {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-transform: uppercase;
-    font-size: 15px;
-    font-weight: 900;
+    font-size: 20px;
+    font-weight: bolder;
     color:  rgb(75, 114, 128);
+    text-align: center;
+}
+
+.container h2 {
+    background-color: white;
 }
 
 .walk a {
-    color:  rgb(75, 114, 128);
+    color: rgb(75, 114, 128);
+    font-weight: bolder;
+    font-size: 17px;
+    background-color: white;
 }
-.container{
+
+.container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, auto);
-    grid-row-gap: 20px;
-  }
-
-.walk_image, .environment_image, .gerontology_image {
-    max-height: 500px;
-    overflow: hidden;
+    grid-template-columns: auto;
+    grid-gap: 40px;
+    padding: 10px;
+    margin: 10px; 
 }
 
-.walk_image {
-    grid-column: 1 / 2;
+.container div {
+    border: 10px solid rgb(75, 114, 128);
 }
 
-.environment_image {
-    grid-column: 2 / 3;
+.container p {
+    margin: 15px;
 }
-
-.gerontology_image {
-    grid-column: 1 / 2;
-}
-
-  .walk, .walk_image{
-    grid-row: 1 / span 1;
-  }
-
-  .environment, .environment_image{
-    grid-row: 2 / span 1;
-  }
-
-  .walk, .gerontology {
-    grid-column: 2 / span 1;
-  }
-
-  .environment {
-      grid-column: 1 / span 1;
-  }
-
-  /* .walk, .gerontology, .environment {
-      max-height: 500px;
-  } */
-
-  .gerontology, .gerontology_image {
-    grid-row: 3 / span 1;
-  }
-
-  .text-block{
-    background-color: rgba(255, 255, 255, .8);
-    border: 10px solid  rgb(75, 114, 128);
-    padding: 30px;
-    /* Your code here */
-    align-self: center;
-    max-height: 330px;
-    overflow: scroll;
-  }
 
   /* whySK.html */
 .container_why {
@@ -208,4 +228,87 @@ h2 {
 .photos img {
     width: 100%;
     border: solid white 8px;
+}
+
+/* //////////////////////////////////// tablet view ///////////////////////////////////////////// */
+@media screen and (min-width: 770px) {
+    /* navigation */
+    nav li a {
+        padding: 40px;
+    }
+
+    /* index.html */
+    .title {
+        width: 80%;
+        margin: 0 auto;
+        border: 8px solid white;
+        text-decoration: bold;
+        text-align: center;
+    }
+
+    .facts {
+        text-align: center;
+    }
+
+    /* philonthropy.html */
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+
+    .walk h2, .walk img, .walk p {
+        grid-column: 1 / span 1;
+    }
+
+    .environment h2, .environment img, .environment p {
+        grid-column: 2 / span 1;
+    }
+
+    .gerontology h2, .gerontology img, .environment p {
+        grid-column: 3 / span 1;
+    }
+
+    /* whysk.html */
+    .container_why {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content:center;
+    }
+
+    .one, .two, .three, .four, .five {
+        flex-basis: 345px;
+    }
+
+    /* photos.html */
+    .photos {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    #pone, #ptwo, #pthree {
+        grid-row: 1 / 2;
+    }
+
+    #pfour, #pfive, #psix {
+        grid-row: 2 / 3;
+    }
+
+    #pseven, #peight, #pnine {
+        grid-row: 3 / 4;
+    }
+
+    #pone, #pfour, #pseven {
+        grid-column: 1 / 2;
+    }
+
+    #ptwo, #pfive, #peight {
+        grid-column: 2 / 3;
+    }
+
+    #pthree, #psix, #pnine {
+        grid-column: 3 / 4;
+    }
+
 }
