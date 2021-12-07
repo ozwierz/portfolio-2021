@@ -9,6 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8DMJS48WL9"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-8DMJS48WL9');
+    </script>
     <title>Sigma Kappa</title>
 </head>
 
@@ -22,7 +30,7 @@
 				<li class="current"><a href = "index.html">About Us</a></li>
 				<li class = "navitem"><a href = "philanthropy.html">Philanthropy</a></li>
 				<li class = "navitem"><a href = "why.html">Why SK?</a></li>
-				<li class = "navitem"><a href = "photos.html">Photos</a></li>				
+				<li class = "navitem"><a href = "photos.html">Gallery</a></li>				
 			</ul>
 		</nav>
 	</div>
@@ -37,9 +45,45 @@
             with a purpose of providing women with the opportunity and support for social, intellectual,
             and spirtual development. </p>
         </div>
-        <div class ="skouse">
-            <img src="images/skouse.JPEG" alt="Sigma Kappa House at the University of Michigan" />
+        <div class = "parallax">
         </div>
+        <div class="slideshow-container">
+            <div class="myslides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="images/first.JPG" alt="Girls smiling">
+                <div class="text">Sisters!</div>
+            </div>
+  
+            <div class="myslides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="images/housedispo.JPG" alt="Girls in front of SK House">
+                <div class="text">Game Day!</div>
+            </div>
+  
+            <div class="myslides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="images/third.JPG" alt="Vacation">
+                <div class="text">SK Vacation!</div>
+            </div>
+
+            <div class="myslides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="images/fourth.JPG" alt="Sisterhood event">
+                <div class="text">Sisterhood Event!</div>
+            </div>
+  
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+  
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+
         <div class="facts">
             <p>Nationally, there are 122 collegiate Sigma Kappa chapters with nearly 172,000 members
             worldwide. The friendships developed at our chapters last a lifetime, as well as 
@@ -71,6 +115,7 @@
                </form>
         </div>
     </main>
+    <script src="js/slider.js"></script>
 
     <footer>
         <p>University of Michigan Sigma Kappa <br/>

@@ -9,6 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8DMJS48WL9"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-8DMJS48WL9');
+    </script>
     <title>SK Philanthropy</title>
 </head>
 
@@ -22,25 +30,33 @@
 				<li class = "navitem"><a href = "index.html">About Us</a></li>
 				<li class = "current"><a href = "philanthropy.html">Philanthropy</a></li>
 				<li class = "navitem"><a href = "why.html">Why SK?</a></li>
-				<li class = "navitem"><a href = "photos.html">Photos</a></li>				
+				<li class = "navitem"><a href = "photos.html">Gallery</a></li>				
 			</ul>
 		</nav>
 	</div>
     </header>
 
-    <main id = "main">
+    <main class = "main" id = "main">
         <div class = "title">
             <h1> Sigma Kappa Philanthropy</h1>
             <p>Sigma Kappa participates in a variety of philantropic events.
                 The chapter provides many opportunies for its memebers to become involved 
-                in the community. Some of these philanthropies include:</p>
+                in the community. Our philanthropies come in the acronym S.I.G.M.A. -- S for
+                the Sigma Kappa Foundation, I for Inherit the Earth, G for Gerontology, M for the
+                Maine Seacoast Mission, and A for The Alzheimer's Association. Some of the events
+                we participate in for these philanthropies include:</p>
         </div>
 
     <div class = "container">
-        <div class = "walk" tabindex="0">
-                <h2> The Alzheimer's Association</h2>
-                <img src="images/walk.jpeg" alt="2021 Walk to End Alzheimer's"/>
-                <p>The Alzheimer's disease is the sixth-leading cause of death in 
+        <div class = "walk">
+            <div class="flip-card" tabindex="0">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h2> The Alzheimer's Association</h2>
+                        <img src="images/walk.jpeg" alt="2021 Walk to End Alzheimer's"/>
+                    </div>
+                    <div class = "flip-card-back">
+                        <p>The Alzheimer's disease is the sixth-leading cause of death in 
                     the United States, but there is not cure. Therefore, Sigma Kappa is 
                     committed to ending Alzheimer's by generating immense donations and 
                     participating in fundraisers. The main fundraiser, that all Sigma Kappa 
@@ -48,35 +64,54 @@
                     the Walk to End Alzheimer's. This is the largest event to raise runds 
                     and awareness for Alzheimer's research and support. In 2021, Ann Arbor
                     members raised over $6,000! <br>
-                <a href="https://act.alz.org/site/TR;jsessionid=00000000.app20007b?company_id=1261&pg=national_company&pw_id=3321&NONCE_TOKEN=0AC57E48AF54AA61F7AD10E60F59137C">
+                        <a href="https://act.alz.org/site/TR;jsessionid=00000000.app20007b?company_id=1261&pg=national_company&pw_id=3321&NONCE_TOKEN=0AC57E48AF54AA61F7AD10E60F59137C">
                     Join Sigma Kappa's National Walk to End Team!</a></p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class = "environment">
+            <div class="flip-card" tabindex="0">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h2>Inherit the Earth</h2>
+                        <img src = "images/trash.JPG" alt="Trash Collection for Earth Day"/>
+                    </div>
+                    <div class = "flip-card-back">
+                        <p>Improving the environment is a big part of Sigma Kappa. The members strive
+                            to make a lasting impact on the planet. Inherit the Earth is a service project 
+                            that provides college students and other community memebers to improve local 
+                            environments. Each year, Sigma Kappa Alpha Mu conducts a trash collection at 
+                            the local fraternities on campus for Earth Day. In 2021, 704 pounds of trash 
+                            was collected!</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class = "environment" tabindex="0">
-                <h2>Inherit the Earth</h2>
-                <img src = "images/trash.JPG" alt="Trash Collection for Earth Day"/>
-                <p>Improving the environment is a big part of Sigma Kappa. The members strive
-                    to make a lasting impact on the planet. Inherit the Earth is a service project 
-                    that provides college students and other community memebers to improve local 
-                    environments. Each year, Sigma Kappa Alpha Mu conducts a trash collection at 
-                    the local fraternities on campus for Earth Day. In 2021, 704 pounds of trash 
-                    was collected!</p>
-        </div>
-
-        <div class = "gerontology" tabindex="0">
-                <h2>Gerontolgy</h2>
-                <img src = "images/cards.jpeg" alt="Valentine's Day Cards for the elderly"/>
-                <p> To corresponds with the emphasis on Alzheimer's, Sigma Kappa also recognizes 
-                    the needs of the elderly population. Members volunteer to support and communicate 
-                    with elderly in their local Ann Arbor community as a part of this interest in gerontology.
-                    In 2021, members created Valentine's Day cards for a nearby senior living facility
-                    since many were unable to see their family members due to COVID-19.</p>
+        <div class = "gerontology">
+            <div class="flip-card" tabindex="0">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h2>Gerontolgy</h2>
+                        <img src = "images/cards.jpeg" alt="Valentine's Day Cards for the elderly"/>
+                    </div>
+                    <div class = "flip-card-back">
+                        <p> To corresponds with the emphasis on Alzheimer's, Sigma Kappa also recognizes 
+                        the needs of the elderly population. Members volunteer to support and communicate 
+                        with elderly in their local Ann Arbor community as a part of this interest in gerontology.
+                        In 2021, members created Valentine's Day cards for a nearby senior living facility
+                        since many were unable to see their family members due to COVID-19.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     </main>
 
     <footer>
-        <p>University of Michigan Sigma Kappa <br/>
+        <p>University of Michigan Sigma Kappa <br>
             Olivia Zwierzchowski &copy; 2021</p>
     </footer>
 
